@@ -27,14 +27,14 @@ h4{}
 h5{}
 label{
     font-size: 16px;
-    padding: 0px 5px;
+    padding: 5px 0px;
     font-family: poppins, sans-serif;
     font-weight: 200;
-    color: white;
+    color: rgb(44, 44, 44);
 }
 input{
     font-size: 16px;
-    padding: 0px 5px;
+    padding: 5px 0px;
     font-family: poppins, sans-serif;
     font-weight: 200;
     color: white;
