@@ -11,8 +11,8 @@
         include 'src/views/login/login.php';
     });
 
-    $router->add('/adios', function() {
-        echo '¡Adiós, mundo!';
+    $router->add('/padelshop/home', function() {
+        include 'src\views\home\home.php';
     });
 
 
