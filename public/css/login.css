@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/fondoLogin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    background-color: rgb(221, 228, 243);
+}
+
+.card-header{
+    background-color: rgb(28, 107, 255);
+    opacity: 1;
+}
