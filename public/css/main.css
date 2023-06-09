@@ -25,5 +25,18 @@ h3{
 }
 h4{}
 h5{}
-
+label{
+    font-size: 16px;
+    padding: 5px 0px;
+    font-family: poppins, sans-serif;
+    font-weight: 300;
+    color: rgb(20, 20, 20);
+}
+input{
+    font-size: 16px;
+    padding: 5px 0px;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    color: rgb(20, 20, 20);
+}
 
