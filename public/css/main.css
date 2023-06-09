@@ -1,0 +1,29 @@
+/* FUENTES DE TEXTO */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+
+h1{
+    font-size: 48px;
+    padding: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+h2{
+    font-size: 32px;
+    padding: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+h3{
+    font-size: 24px;
+    padding: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+h4{}
+h5{}
+
+
