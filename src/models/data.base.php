@@ -5,7 +5,7 @@ class Database {
     private $pass = ''; // Cambia esto por tu contraseña
     private $db   = 'padel_shop'; // Cambia esto por tu base de datos
 
-    private $connection;
+    public $connection;
     private static $instance;
 
     public static function getInstance() {

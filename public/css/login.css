@@ -17,3 +17,8 @@ body{
     background-color: rgb(28, 107, 255);
     opacity: 1;
 }
+
+p {
+    color: rgb(221, 48, 48);
+    margin-bottom: 16px;
+}

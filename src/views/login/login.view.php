@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="reset.css">
+<? 
+require 'src\controllers\login\login.controller.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,13 +24,17 @@
                 <h3 class="text-center">Iniciar sesión</h3>
               </header>
               <container class="card-body">
-                <form action="procesar.php" method="post">
+                <form action="/padelshop/login" method="post">
                   <label for="usuario">Usuario</label>
-                  <input type="text" class="form-control mb-3" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
+                  <input type="text" class="form-control mb-3" id="usuario" name="username" placeholder="Ingresa tu usuario">
     
                   <label for="contrasena">Contraseña</label>
-                  <input type="password" class="form-control mb-3" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña">
-    
+                  <input type="password" class="form-control mb-3" id="contrasena" name="password" placeholder="Ingresa tu contraseña">
+                  <?php
+                    if(isset($loginResult)){
+                        echo '<p style="color: red; font-weight: bold; padding-bottom: 16px;">' . $loginMsg . '</p>';
+                    }
+                  ?>
                   <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
                 </form>
               </container>
