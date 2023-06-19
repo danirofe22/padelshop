@@ -13,7 +13,6 @@
     $router->add('/padelshop/home', function() {
         include_once 'src\views\home\home.php';
     });
-
-    error_log('he entrado en router');
+    
     $router->run(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 ?>

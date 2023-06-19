@@ -1,3 +1,4 @@
-<?
-    include 'src\views\login\login.view.php'
+<?php
+    header('Location: http://localhost/padelshop/login');
+    exit;
 ?>

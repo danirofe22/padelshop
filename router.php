@@ -28,14 +28,5 @@ class Router {
             };
         }
     }
-
-    // public function navigate($url) {
-    //     if (array_key_exists($url, $this->routes)) {
-    //         header("Location: http://localhost/" . $this->routes[$url]);
-    //         exit();
-    //     } else {
-    //         echo "404 Not Found";
-    //     }
-    // }
 }
 ?>
