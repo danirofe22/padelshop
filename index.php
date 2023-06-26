@@ -11,7 +11,7 @@
     });
 
     $router->add('/padelshop/home', function() {
-        include_once 'src\views\home\home.php';
+        include_once 'src\views\home\home.view.php';
     });
     
     $router->run(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));

@@ -41,6 +41,7 @@
             if ($password == $user['contrasena']) {
                 //Redireccion a la home
                 $resultado['msg'] = 'Login realizado correctamente';
+                $resultado['login'] = true;
                 return $resultado;
                 
             } else {
