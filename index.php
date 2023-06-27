@@ -13,6 +13,10 @@
     $router->add('/padelshop/home', function() {
         include_once 'src\views\home\home.view.php';
     });
+
+    $router->add('/padelshop/singup', function() {
+        include_once 'src\controllers\login\sing.up.controller.php';
+    });
     
     $router->run(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 ?>

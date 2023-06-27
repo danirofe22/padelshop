@@ -10,9 +10,9 @@ require 'src\controllers\login\login.controller.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="public\img\logo-v.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="public\css\login.css">
     <link rel="stylesheet" href="public\css\reset.css">
     <link rel="stylesheet" href="public\css\main.css">
+    <link rel="stylesheet" href="public\css\login.css">
     <title>Tienda de padel</title>
 </head>
 <body>
@@ -35,7 +35,12 @@ require 'src\controllers\login\login.controller.php';
                         echo '<p style="color: red; font-weight: bold; padding-bottom: 16px;">' . $loginMsg . '</p>';
                     }
                   ?>
-                  <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                  <buttons class="buttons">
+                    <button type="submit" class="btn btn-primary btn-block"><p class="white-text">Iniciar sesión</p></button>
+                    <a href="singup">
+                      <button type="button" class="btn btn-link btn-block"><p>Registrarse</p></button>
+                    </a>
+                  </buttons>
                 </form>
               </container>
             </container>
