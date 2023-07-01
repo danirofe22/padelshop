@@ -22,14 +22,14 @@
 
                 <article class="col-md-4 mb-3">
                     <h5>Sobre nosotros</h5>
-                    <p>Somos una comunidad apasionada por el pádel. Únete a nosotros y disfruta del mejor deporte del mundo.</p>
+                    <p class="footerText">Somos una comunidad apasionada por el pádel. Únete a nosotros y disfruta del mejor deporte del mundo.</p>
                 </article>
 
                 <address class="col-md-4 mb-3 text-light">
                     <h5>Contacto</h5>
-                    <p>Calle de la Pádel, 123</p>
-                    <p>+34 123 456 789</p>
-                    <p>info@pagina-padel.com</p>
+                    <p class="footerText">Calle de la Pádel, 123</p>
+                    <p class="footerText">+34 123 456 789</p>
+                    <p class="footerText">info@pagina-padel.com</p>
                 </address>
             </div>
         </section>

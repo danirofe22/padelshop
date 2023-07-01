@@ -1,21 +1,10 @@
-@media only screen and (max-width: 600px) {
-    .navbar-nav {
-        display: flex;
-        justify-content: center;
-    } 
+aside {
+    display: flex;
+    justify-content: center; 
 }
 
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .navbar-nav {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    .navbar-nav {
-        display: flex;
-        justify-content: flex-end;
+@media (max-width: 1024px) {
+    aside {
+        justify-content: flex-start; 
     }
 }
