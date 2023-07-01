@@ -17,3 +17,7 @@ body{
     background-color: rgb(28, 107, 255);
     opacity: 1;
 }
+
+.white-text {
+    color: white;
+}
