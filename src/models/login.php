@@ -17,7 +17,7 @@
         
         //Parametros string usuario y string contraseña
         //Devuelve un objeto con string msg y bool de exito en el login
-        public function login($username, $password) {
+        public function login($username, $password): array{
             $resultado = array(
                 'login' => false,
                 'msg' => ''
@@ -44,11 +44,12 @@
                 $resultado['login'] = true;
                 return $resultado;
                 
-            } else {
-                //Redireccion a login con mensaje de error
-                $resultado['msg'] = 'La contraseña es incorrecta';
-                return $resultado;
             }
+            
+            //Redireccion a login con mensaje de error
+            $resultado['msg'] = 'La contraseña es incorrecta';
+            return $resultado;
+            
         }
     }
     ?>

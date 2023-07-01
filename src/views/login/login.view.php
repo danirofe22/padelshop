@@ -18,13 +18,13 @@ require 'src\controllers\login\login.controller.php';
 <body>
     <main class="container">
         <section class="row justify-content-center mt-5">
-          <article class="col-md-6">
+          <article class="">
             <container class="card">
               <header class="card-header">
                 <h3 class="text-center">Iniciar sesión</h3>
               </header>
               <container class="card-body">
-                <form action="/padelshop/login" method="post">
+                <form action="/padelshop/login/" method="post">
                   <label for="usuario">Usuario</label>
                   <input type="text" class="form-control mb-3" id="usuario" name="username" placeholder="Ingresa tu usuario">
     

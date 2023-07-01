@@ -20,7 +20,6 @@ class Database {
             $this->connection = new mysqli($this->host, $this->user, $this->pass, $this->db);
 
             if ($this->connection->connect_error) {
-                echo "Error de conexión: " . $this->connection->connect_error;
                 return false;
             }
         }
@@ -37,7 +36,6 @@ class Database {
     public function query($sql) {
         $connection = $this->connect();
         if (!$connection) {
-            echo "Error en la consulta: " . $connection->error;
         }
         $result = $connection->query($sql);
         $this->disconnect();
