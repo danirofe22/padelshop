@@ -43,23 +43,22 @@
       <?php require 'src\views\components\filters.component.php'; ?>
     </aside>
     <main class="container">
-        <article class="row product-detail animate__animated animate__fadeInUp">
+      <article class="row product-detail animate__animated animate__fadeInUp">
         <section class="col-lg-6">
             <img src="imagen.jpg" alt="Producto" class="product-image animate__animated animate__zoomIn">
         </section>
         <section class="col-lg-6">
-            <h1 class="product-title">Nombre del producto</h1>
-            <p class="product-price">$99.99</p>
-            <p class="product-description">Descripción del producto.</p>
-            <h2 class="product-features-title">Características</h2>
-            <ul class="product-features">
-            <li class="animate__animated animate__fadeInLeft">Característica 1</li>
-            <li class="animate__animated animate__fadeInLeft">Característica 2</li>
-            <!-- Agrega más características aquí -->
-            </ul>
-            <p class="product-category">Categoría: Categoría del producto</p>
+          <h1 class="product-title">Nombre del producto</h1>
+          <p class="product-price">$99.99</p>
+          <p class="product-description">Descripción del producto.</p>
+          <h2 class="product-features-title">Características</h2>
+          <ul class="product-features">
+          <li class="animate__animated animate__fadeInLeft">Característica 1</li>
+          <li class="animate__animated animate__fadeInLeft">Característica 2</li>
+          </ul>
+          <p class="product-category">Categoría: Categoría del producto</p>
         </section>
-        </article>
+      </article>
     </main>
     <footer>
         <?php require 'src\views\components\footer.component.php';?>
