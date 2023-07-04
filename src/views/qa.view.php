@@ -35,7 +35,7 @@
     </style>
 </head>
 <body>
-<header>
+    <header>
         <?php require 'src\views\components\header.component.php'; ?>
         <?php require 'src\views\components\menu.component.php'; ?>
     </header>
