@@ -2,22 +2,21 @@
 <html lang="es">
 <head>
     <title>Tienda de Padel</title>
-    <link rel="stylesheet" href="public\css\reset.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\reset.css">
     <link rel="icon" type="image/x-icon" href="public\img\logo-v.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/1e0d777b0c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public\css\main.css">
-    <link rel="stylesheet" href="public\css\home.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\main.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\home.css">
 </head>
 <body>
     <header>
         <?php require 'src\views\components\header.component.php'; ?>
         <?php require 'src\views\components\menu.component.php'; ?>
     </header>
-
     <main>
         <!-- Section for the categories -->
         <section class="container py-5">

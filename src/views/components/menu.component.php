@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="public\css\header.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\header.css">
 </head>
 <body>
     <aside class="navbar navbar-dark bg-dark navbar-expand-lg ">
@@ -9,13 +9,12 @@
         </button>
         <section id="iconMenu" class="navbar-collapse collapse flex-md-column menu">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#"><p>Enlace 1</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p>Enlace 2</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p>Enlace 3</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p>Enlace 4</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><p>Enlace 5</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>home"><p>HOME</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>#"><p>PRODUCTOS</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>#"><p>Q&A</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>#"><p>CONTACTO</p></a></li>
             </ul>
         </section>
-    </aside>  
+    </aside>
 </body>
 </html>

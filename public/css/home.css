@@ -8,3 +8,7 @@ aside {
         justify-content: flex-start; 
     }
 }
+
+h2 {
+    color: black;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="public\css\footer.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\footer.css">
 </head>
 <body>
     <!-- Resto de la página... -->
@@ -14,9 +14,9 @@
                 <nav class="col-md-4 mb-3">
                     <h5>Navegación</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">Inicio</a></li>
-                        <li><a href="#" class="text-light">Eventos</a></li>
-                        <li><a href="#" class="text-light">Contacto</a></li>
+                        <li><a href="<?php echo constant('URL'); ?>#" class="text-light">Inicio</a></li>
+                        <li><a href="<?php echo constant('URL'); ?>#" class="text-light">Eventos</a></li>
+                        <li><a href="<?php echo constant('URL'); ?>#" class="text-light">Contacto</a></li>
                     </ul>
                 </nav>
 

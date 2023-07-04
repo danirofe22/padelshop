@@ -14,6 +14,7 @@
             $urlControlador = 'src/controllers/' . $url[0] . '.controller.php';            
             require_once $urlControlador;
             $urlControlador = $url[0] . 'Controller';
+       
             $controller = new $urlControlador;
             if(isset($url[1])){
                 $controller->{$url[1]}();

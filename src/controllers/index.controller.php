@@ -9,6 +9,7 @@
         }
 
         public function saludar(){
+            echo '<p>Se ejecuta un saludo desde el index controller</p>';
         }   
     }
 ?>
