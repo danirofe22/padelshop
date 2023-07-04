@@ -12,39 +12,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\main.css">
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\product.css">
-  <style>
-    /* Estilos personalizados para las tarjetas de producto */
-    .product-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .product-card img {
+    <style>
+    .product-detail .product-image {
       max-width: 100%;
       height: auto;
-      margin-bottom: 10px;
     }
-    .product-card .product-title {
-      font-size: 20px;
+    .product-detail .product-title {
+      font-size: 24px;
       font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .product-card .product-price {
-      font-size: 16px;
-      color: #666;
-    }
-    .product-card .product-description {
-      margin-top: 10px;
-    }
-    .product-card .product-link {
       margin-top: 20px;
     }
-    .product-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+    .product-detail .product-price {
+      font-size: 20px;
+      color: #666;
+      margin-top: 10px;
+    }
+    .product-detail .product-description,
+    .product-detail .product-features,
+    .product-detail .product-category {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -55,25 +42,27 @@
     <aside>
       <?php require 'src\views\components\filters.component.php'; ?>
     </aside>
-    <main>
-    <div class="container">
-    <div class="row">
-      <?php foreach ($this->data['productos'] as $producto): ?>
-        <div class="col-lg-4 col-md-6">
-          <div class="product-card animate__animated animate__fadeInUp" onclick="this.classList.toggle('animate__pulse')">
-            <img class="product-image" src="public\img\<?= $producto['imagen'] ?>" alt="<?= $producto['nombre'] ?>">
-            <h3 class="product-title"><?= $producto['nombre'] ?></h3>
-            <p class="product-price"><?= $producto['precio'] ?></p>
-            <p class="product-description"><?= $producto['descripcion'] ?></p>
-            <a href="#" class="btn btn-primary product-link">Ver detalle</a>
-          </div>
-        </div>
-      <?php endforeach; ?>
-    </div> 
-</div>
+    <main class="container">
+        <article class="row product-detail animate__animated animate__fadeInUp">
+        <section class="col-lg-6">
+            <img src="imagen.jpg" alt="Producto" class="product-image animate__animated animate__zoomIn">
+        </section>
+        <section class="col-lg-6">
+            <h1 class="product-title">Nombre del producto</h1>
+            <p class="product-price">$99.99</p>
+            <p class="product-description">Descripción del producto.</p>
+            <h2 class="product-features-title">Características</h2>
+            <ul class="product-features">
+            <li class="animate__animated animate__fadeInLeft">Característica 1</li>
+            <li class="animate__animated animate__fadeInLeft">Característica 2</li>
+            <!-- Agrega más características aquí -->
+            </ul>
+            <p class="product-category">Categoría: Categoría del producto</p>
+        </section>
+        </article>
     </main>
     <footer>
-      <?php require 'src\views\components\footer.component.php';?>
+        <?php require 'src\views\components\footer.component.php';?>
     </footer>
 </body>
 </html>

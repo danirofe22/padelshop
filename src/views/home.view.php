@@ -3,7 +3,7 @@
 <head>
     <title>Tienda de Padel</title>
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\reset.css">
-    <link rel="icon" type="image/x-icon" href="public\img\logo-v.png">
+    <link rel="icon" type="image/x-icon" href="<?php echo constant('URL'); ?>public\img\logo-v.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

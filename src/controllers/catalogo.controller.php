@@ -8,6 +8,7 @@ class CatalogoController extends Controller{
         parent::__construct();
         $this->productoCon = Producto::getInstance();
         $this->listarProductos();
+        session_start();
     }
 
     function listarProductos() {
@@ -20,5 +21,12 @@ class CatalogoController extends Controller{
             $this->view->render('catalogo'); // Asegúrate de tener una vista de error
         }
     }
+
+    function verDetalleProducto($id) {
+        $_SESSION['producto'] = $id;
+        header('Location: http://localhost/padelshop/detalleproducto');
+        exit();
+    }
+
 }
 ?>

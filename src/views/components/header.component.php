@@ -14,7 +14,7 @@
             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <li><a class="dropdown-item" href="<?php echo constant('URL'); ?>detallePerfil"><i class="fas fa-user-circle"></i> <p>Ver Perfil</p></a></li>
                 <li><a class="dropdown-item" href="<?php echo constant('URL'); ?>modificarPerfil"><i class="fas fa-edit"></i> <p>Modificar Perfil</p></a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> <p>Cerrar Sesión</p></a></li>
+                <li><a class="dropdown-item" href="<?php echo constant('URL'); ?>home/logout"><i class="fas fa-sign-out-alt"></i> <p>Cerrar Sesión</p></a></li>
             </ul>
         </nav>
     </section>

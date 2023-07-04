@@ -10,9 +10,9 @@
         <section id="iconMenu" class="navbar-collapse collapse flex-md-column menu">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>home"><p>HOME</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>#"><p>PRODUCTOS</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>#"><p>Q&A</p></a></li>
-                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>#"><p>CONTACTO</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>catalogo"><p>PRODUCTOS</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>qa"><p>Q&A</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>contacto"><p>CONTACTO</p></a></li>
             </ul>
         </section>
     </aside>
