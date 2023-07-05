@@ -33,6 +33,7 @@
     .product-card .product-price {
       font-size: 16px;
       color: #666;
+      margin: 0px;
     }
     .product-card .product-description {
       margin-top: 10px;
@@ -60,13 +61,18 @@
     <div class="row">
       <?php foreach ($this->data['productos'] as $producto): ?>
         <div class="col-lg-4 col-md-6">
-          <div class="product-card animate__animated animate__fadeInUp" onclick="this.classList.toggle('animate__pulse')">
-            <img class="product-image" src="public\img\<?= $producto['imagen'] ?>" alt="<?= $producto['nombre'] ?>">
-            <h3 class="product-title"><?= $producto['nombre'] ?></h3>
-            <p class="product-price"><?= $producto['precio'] ?></p>
-            <p class="product-description"><?= $producto['descripcion'] ?></p>
-            <a href="#" class="btn btn-primary product-link">Ver detalle</a>
-          </div>
+            <div class="product-card animate__animated animate__fadeInUp" onclick="this.classList.toggle('animate__pulse')">
+                <img class="product-image" src="public\img\<?= $producto['imagen'] ?>" alt="<?= $producto['nombre'] ?>">
+                <h3 class="product-title"><?= $producto['nombre'] ?></h3>
+                <?php if ($producto['is_oferta'] === 'true'): ?>
+                  <p class="product-price" style="text-decoration: line-through; color: red;">Antes: <?= $producto['precio'] ?></p>
+                  <p class="product-price">Ahora: <?= $producto['oferta'] ?></p>
+                <?php else: ?>
+                  <p class="product-price"><?= $producto['precio'] ?></p>
+                <?php endif; ?>
+                <p class="product-description"><?= $producto['descripcion'] ?></p>
+                <a href="<?php echo constant('URL'). 'catalogo/verdetalleproducto/' . $producto['id_producto'] ?>" class="btn btn-primary product-link">Ver detalle</a>
+            </div>
         </div>
       <?php endforeach; ?>
     </div> 

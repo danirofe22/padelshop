@@ -12,3 +12,36 @@ aside {
 h2 {
     color: black;
 }
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .product-card .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .product-card .product-price {
+    font-size: 16px;
+    color: #666;
+    margin: 0px;
+  }
+  .product-card .product-description {
+    margin-top: 10px;
+  }
+  .product-card .product-link {
+    margin-top: 20px;
+  }
+  .product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

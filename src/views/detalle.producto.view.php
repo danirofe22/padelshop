@@ -45,18 +45,14 @@
     <main class="container">
       <article class="row product-detail animate__animated animate__fadeInUp">
         <section class="col-lg-6">
-            <img src="imagen.jpg" alt="Producto" class="product-image animate__animated animate__zoomIn">
+            <img src="<?php echo constant('URL'); ?>public/img/<?php echo $this->data['productData']['data']['imagen'];?>" alt="Producto" class="product-image animate__animated animate__zoomIn">
         </section>
         <section class="col-lg-6">
-          <h1 class="product-title">Nombre del producto</h1>
-          <p class="product-price">$99.99</p>
-          <p class="product-description">Descripción del producto.</p>
-          <h2 class="product-features-title">Características</h2>
-          <ul class="product-features">
-          <li class="animate__animated animate__fadeInLeft">Característica 1</li>
-          <li class="animate__animated animate__fadeInLeft">Característica 2</li>
-          </ul>
-          <p class="product-category">Categoría: Categoría del producto</p>
+          <h1 class="product-title"><?php echo $this->data['productData']['data']['nombre'];?></h1>
+          <p class="product-price">Precio: <?php echo $this->data['productData']['data']['precio'];?> €</p>
+          <p class="product-description"> Descripcion: <?php echo $this->data['productData']['data']['descripcion'];?></p>
+          <span class="animate__animated animate__fadeInLeft"><?php echo $this->data['productData']['data']['caracteristicas'];?></span>
+          <p class="product-category">Categoría: <?php echo $this->data['productData']['data']['categoria'];?></p>
         </section>
       </article>
     </main>

@@ -5,10 +5,10 @@ class CatalogoController extends Controller{
     public $productoCon;
 
     function __construct() {
+        session_start();
         parent::__construct();
         $this->productoCon = Producto::getInstance();
         $this->listarProductos();
-        session_start();
     }
 
     function listarProductos() {
@@ -23,10 +23,20 @@ class CatalogoController extends Controller{
     }
 
     function verDetalleProducto($id) {
-        $_SESSION['producto'] = $id;
-        header('Location: http://localhost/padelshop/detalleproducto');
-        exit();
+        echo "<script>console.log('he entrado en metodo ddd')</script>";
+        $productData = $this->productoCon->obtenerPorId($id);
+        if (isset($productData['error'])) {
+            $this->view->set_data('msg', $productData['msg']);
+            echo '<script>document.body.innerHTML = ""</script>';
+            $this->view->render('error/error');
+        } else {
+            
+            $this->view->set_data('productData', $productData);
+            echo '<script>document.body.innerHTML = ""</script>';
+            $this->view->render('detalle.producto');
+        }
     }
 
+    
 }
 ?>

@@ -29,7 +29,7 @@ class Producto{
 
     public function obtenerPorId($id): array{
         $this->db->connect();
-        $stmt = $this->db->connection->prepare("SELECT * FROM productos WHERE id = ?");
+        $stmt = $this->db->connection->prepare("SELECT * FROM productos WHERE id_producto = ?");
         $stmt->bind_param("i", $id);
         if (!$stmt->execute()) {
             return ['success' => false, 'msg' => $stmt->error];
@@ -68,5 +68,41 @@ class Producto{
         }
         return ['success' => true];
     }
+
+    public function obtenerPorCategoria($categoria): array{
+        $this->db->connect();
+        $stmt = $this->db->connection->prepare("SELECT * FROM productos WHERE categoria = ?");
+        $stmt->bind_param("s", $categoria);
+        if (!$stmt->execute()) {
+            return ['success' => false, 'msg' => $stmt->error];
+        }
+        $result = $stmt->get_result();
+        $producto = $result->fetch_assoc();
+        return ['success' => true, 'data' => $producto];
+    }
+
+    public function obtenerMasVendidos(): array{
+        $this->db->connect();
+        $stmt = $this->db->connection->prepare("SELECT * FROM productos ORDER BY stock ASC LIMIT 3;");
+        if (!$stmt->execute()) {
+            return ['success' => false, 'msg' => $stmt->error];
+        }
+        $result = $stmt->get_result();
+        $producto = $result->fetch_all();
+        return ['success' => true, 'data' => $producto];
+    }
+
+    public function obtenerMejoresOfertas(): array{
+        $this->db->connect();
+        $stmt = $this->db->connection->prepare("SELECT *, (precio - oferta) AS diferencia FROM productos WHERE is_oferta = 'true' ORDER BY diferencia DESC LIMIT 3;");
+        if (!$stmt->execute()) {
+            return ['success' => false, 'msg' => $stmt->error];
+        }
+        $result = $stmt->get_result();
+        $producto = $result->fetch_all();
+        return ['success' => true, 'data' => $producto];
+    }
+
+
 }
 ?>
