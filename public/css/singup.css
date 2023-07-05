@@ -2,7 +2,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     background-image: url('../img/fondoLogin.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,11 +20,6 @@ body{
 
 .white-text {
     color: white;
-    margin: 0px;
-}
-
-.buttons button p{
-    margin: 0px;
 }
 
 h1{
@@ -34,6 +29,7 @@ h1{
     font-weight: 400;
     color: white;
 }
+
 h2{
     font-size: 32px;
     padding: 10px;
@@ -48,3 +44,5 @@ h3{
     font-weight: 400;
     color: white;
 }
+
+p{margin-bottom: 0px;}

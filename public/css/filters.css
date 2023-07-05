@@ -1,0 +1,26 @@
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+aside {
+    width: 100%;
+}
+
+button.navbar-toggler {
+    display: flex;
+    align-items: center;
+}
+
+button.navbar-toggler span {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: center;
+}
+
+button.navbar-toggler i {
+    margin-right: 16px;
+}
