@@ -62,7 +62,7 @@
       <?php foreach ($this->data['productos'] as $producto): ?>
         <div class="col-lg-4 col-md-6">
             <div class="product-card animate__animated animate__fadeInUp" onclick="this.classList.toggle('animate__pulse')">
-                <img class="product-image" src="public\img\<?= $producto['imagen'] ?>" alt="<?= $producto['nombre'] ?>">
+                <img class="product-image" src="<?php echo constant('URL'); ?>public\img\<?= $producto['imagen'] ?>" alt="<?= $producto['imagen'] ?>">
                 <h3 class="product-title"><?= $producto['nombre'] ?></h3>
                 <?php if ($producto['is_oferta'] === 'true'): ?>
                   <p class="product-price" style="text-decoration: line-through; color: red;">Antes: <?= $producto['precio'] ?></p>

@@ -18,12 +18,11 @@ class CatalogoController extends Controller{
             $this->view->render('catalogo'); 
         } else {
             $this->view->set_data('msg', $productosResult['msg']);
-            $this->view->render('catalogo'); // Asegúrate de tener una vista de error
+            $this->view->render('catalogo');
         }
     }
 
     function verDetalleProducto($id) {
-        echo "<script>console.log('he entrado en metodo ddd')</script>";
         $productData = $this->productoCon->obtenerPorId($id);
         if (isset($productData['error'])) {
             $this->view->set_data('msg', $productData['msg']);
