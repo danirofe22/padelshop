@@ -18,7 +18,7 @@ class CatalogoController extends Controller{
             $this->view->render('catalogo'); 
         } else {
             $this->view->set_data('msg', $productosResult['msg']);
-            $this->view->render('catalogo'); // Asegúrate de tener una vista de error
+            $this->view->render('catalogo');
         }
     }
 

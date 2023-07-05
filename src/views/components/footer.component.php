@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\footer.css">
 </head>
 <body>
-    <!-- Resto de la página... -->
-
     <footer class="bg-dark text-light py-5">
         <section class="container">
             <div class="row">

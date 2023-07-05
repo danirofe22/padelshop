@@ -4,11 +4,9 @@ include_once 'src\models\data.base.php';
 class Producto{
     private static $instance;
     private $db;
-
     public function __construct() {
         $this->db = Database::getInstance();
     }
-
     public static function getInstance() {
         if (self::$instance === null) {
             self::$instance = new Producto();

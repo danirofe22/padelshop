@@ -72,8 +72,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section for the best sellers -->
         <section class="container py-5">
             <h2 class="mb-4">Los más vendidos</h2>
             <div class="row">

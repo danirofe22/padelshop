@@ -1,9 +1,9 @@
 <?php
 class Database {
-    private $host = '127.0.0.1'; // Cambia esto por tu host
-    private $user = 'root'; // Cambia esto por tu usuario
-    private $pass = ''; // Cambia esto por tu contraseña
-    private $db   = 'padel_shop'; // Cambia esto por tu base de datos
+    private $host = '127.0.0.1'; 
+    private $user = 'root'; 
+    private $pass = ''; 
+    private $db   = 'padel_shop'; 
 
     public $connection;
     private static $instance;
