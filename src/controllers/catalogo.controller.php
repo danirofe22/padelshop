@@ -23,7 +23,6 @@ class CatalogoController extends Controller{
     }
 
     function verDetalleProducto($id) {
-        echo "<script>console.log('he entrado en metodo ddd')</script>";
         $productData = $this->productoCon->obtenerPorId($id);
         if (isset($productData['error'])) {
             $this->view->set_data('msg', $productData['msg']);

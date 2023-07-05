@@ -16,7 +16,6 @@
             $userData = $this->loginModel->getProfileData($username);
             
             if ($userData === null) {
-                echo "<script>console.log('Error al cargar los datos del perfil')</script>";
             } else {
                 $this->view->set_data('user_data', $userData);
                 $this->view->render('perfil/modificar.perfil');

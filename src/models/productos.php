@@ -77,7 +77,7 @@ class Producto{
             return ['success' => false, 'msg' => $stmt->error];
         }
         $result = $stmt->get_result();
-        $producto = $result->fetch_assoc();
+        $producto = $result->fetch_all(MYSQLI_ASSOC);
         return ['success' => true, 'data' => $producto];
     }
 
@@ -102,7 +102,5 @@ class Producto{
         $producto = $result->fetch_all();
         return ['success' => true, 'data' => $producto];
     }
-
-
 }
 ?>

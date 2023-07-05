@@ -10,7 +10,6 @@
 
         public function registerUser(){
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
-                echo "<script>console.log('he entrado en metodo register')</script>";
                 $registerResult = $this->loginModel->signup(
                     $_POST['nombre'],
                     $_POST['apellidos'], 

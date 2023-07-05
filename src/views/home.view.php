@@ -28,7 +28,7 @@
                         <img class="product-image" src="public\img\<?php echo $this->data['productosTopOfertas'][2][3] ?>" alt="">
                         <h3 class="product-title">PALAS</h3>
                         <p class="product-description">Nuestras mejores palas de padel</p>
-                        <a href="<?php echo constant('URL') . 'home/verCategoria/palas' . $producto[0] ?>" class="btn btn-primary product-link">Ver palas</a>
+                        <a href="<?php echo constant('URL') . 'home/verCategoria/palas'?>" class="btn btn-primary product-link">Ver palas</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -36,7 +36,7 @@
                         <img class="product-image" src="public\img\<?php echo $this->data['productosTopVentas'][1][3] ?>" alt="">
                         <h3 class="product-title">Equipo</h3>
                         <p class="product-description">El mejor equipo para padel</p>
-                        <a href="<?php echo constant('URL') . 'home/verCategoria/equipo' . $producto[0] ?>" class="btn btn-primary product-link">Ver equipos</a>
+                        <a href="<?php echo constant('URL') . 'home/verCategoria/equipo'?>" class="btn btn-primary product-link">Ver equipos</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -44,7 +44,7 @@
                         <img class="product-image" src="public\img\<?php echo $this->data['productosTopVentas'][0][3] ?>" alt="">
                         <h3 class="product-title">Pelotas</h3>
                         <p class="product-description">Pelotas para partidos y entrenos</p>
-                        <a href="<?php echo constant('URL') . 'home/verCategoria/pelotas' . $producto[0] ?>" class="btn btn-primary product-link">Ver pelotas</a>
+                        <a href="<?php echo constant('URL') . 'home/verCategoria/pelotas'?>" class="btn btn-primary product-link">Ver pelotas</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                                     <p class="product-price">Precio: <?php echo $producto[6] ?> €</p>
                                 <?php endif; ?>
                                 <p class="product-description"><?php echo $producto[2] ?></p>
-                                <a href="<?php echo constant('URL') . 'catalogo/verCategoria/pelotas' . $producto[0] ?>" class="btn btn-primary product-link">Ver detalle</a>
+                                <a href="<?php echo constant('URL') . 'home/verdetalleproducto/' . $producto[0] ?>" class="btn btn-primary product-link">Ver detalle</a>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -89,7 +89,7 @@
                                 <p class="product-price">Precio: <?php echo $producto[6] ?> €</p>
                             <?php endif; ?>
                             <p class="product-description"><?php echo $producto[2] ?></p>
-                            <a href="<?php echo constant('URL') . 'catalogo/verdetalleproducto/' . $producto[0] ?>" class="btn btn-primary product-link">Ver detalle</a>
+                            <a href="<?php echo constant('URL') . 'home/verdetalleproducto/' . $producto[0] ?>" class="btn btn-primary product-link">Ver detalle</a>
                         </div>
                     </div>
                 <?php endforeach; ?>

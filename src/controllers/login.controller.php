@@ -16,7 +16,6 @@
 
         function authenticateUser(){
             if($_SERVER['REQUEST_METHOD'] == 'POST') {
-                echo "<script>console.log('he entrado en metodo login')</script>";
                 $loginResult = $this->loginCon->login($_POST['username'], $_POST['password']);
                 if ($loginResult['login']) {
                     session_start();
