@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public\css\menu.css">
+    <link rel="stylesheet" href="<?php echo constant('URL'); ?>public\css\header.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <aside class="navbar navbar-dark bg-dark navbar-expand-lg ">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#iconMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <section id="iconMenu" class="navbar-collapse collapse flex-md-column">
+        <section id="iconMenu" class="navbar-collapse collapse flex-md-column menu">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-palette"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-palette"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-palette"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-palette"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-palette"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>home"><p>HOME</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>catalogo"><p>PRODUCTOS</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>qa"><p>Q&A</p></a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>contacto"><p>CONTACTO</p></a></li>
             </ul>
         </section>
-        
-    </header>
-    
+    </aside>
 </body>
 </html>
