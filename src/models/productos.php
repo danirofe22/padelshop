@@ -4,11 +4,9 @@ include_once 'src\models\data.base.php';
 class Producto{
     private static $instance;
     private $db;
-
     public function __construct() {
         $this->db = Database::getInstance();
     }
-
     public static function getInstance() {
         if (self::$instance === null) {
             self::$instance = new Producto();
@@ -77,7 +75,7 @@ class Producto{
             return ['success' => false, 'msg' => $stmt->error];
         }
         $result = $stmt->get_result();
-        $producto = $result->fetch_assoc();
+        $producto = $result->fetch_all(MYSQLI_ASSOC);
         return ['success' => true, 'data' => $producto];
     }
 
@@ -102,7 +100,5 @@ class Producto{
         $producto = $result->fetch_all();
         return ['success' => true, 'data' => $producto];
     }
-
-
 }
 ?>
